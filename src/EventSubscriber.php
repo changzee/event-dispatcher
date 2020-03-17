@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace JigsawPuzzles\EventDispatcher;
 
-abstract class Listener
+abstract class EventSubscriber
 {
     /***
      * The event handler mappings for the application
@@ -16,7 +16,7 @@ abstract class Listener
      * Register an event listener with the provider.
      * @param ListenerProvider $provider
      */
-    public function attachListeners(ListenerProvider $provider)
+    public function attachSubscriber(ListenerProvider $provider)
     {
         foreach ($this->events() as $eventName => $method) {
             if (is_array($method)) {

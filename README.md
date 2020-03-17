@@ -36,9 +36,9 @@
 ###### 定义一个监听器
 ```php
 use App\Events\UserLogin;
-use JigsawPuzzles\EventDispatcher\Listener;
+use JigsawPuzzles\EventDispatcher\EventSubscriber;
 
-class UserLoginListener extends Listener
+class UserLoginListener extends EventSubscriber
 {
     public function events(): array
     {
@@ -72,8 +72,8 @@ class UserLoginListener extends Listener
 ```php
 $provider = new JigsawPuzzles\EventDispatcher\ListenerProvider();
 
-$listener = new UserLoginListener();
-$listener->attachListeners($provider);
+$listener = new UserLoginSubscriber();
+$listener->attachSubscriber($provider);
 
 $dispatcher = new \JigsawPuzzles\EventDispatcher\EventDispatcher($provider);
 
