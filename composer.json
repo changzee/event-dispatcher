@@ -1,5 +1,5 @@
 {
-    "name": "ChangZee/event-dispatcher",
+    "name": "changzee/event-dispatcher",
     "description": "A full implementation for PSR-14(EventDispatcher specification), which is inspired by yiisoft/event-ddispatcher and laravel's event system.",
     "type": "library",
     "authors": [
