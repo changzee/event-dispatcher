@@ -1,5 +1,5 @@
 {
-    "name": "Jigsaw-Puzzles/event-dispatcher",
+    "name": "ChangZee/event-dispatcher",
     "description": "A full implementation for PSR-14(EventDispatcher specification), which is inspired by yiisoft/event-ddispatcher and laravel's event system.",
     "type": "library",
     "authors": [
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "JigsawPuzzles\\EventDispatcher\\": "src"
+            "ChangZee\\EventDispatcher\\": "src"
         }
     }
 }

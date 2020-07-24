@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace JigsawPuzzles\EventDispatcher;
+namespace ChangZee\EventDispatcher;
 
 use Psr\EventDispatcher\ListenerProviderInterface;
 
 /**
  * Class ListenerProvider
- * @package adBrand\Event
+ * @package ChangeZee\EventDispatcher
  */
 class ListenerProvider implements ListenerProviderInterface
 {
@@ -34,11 +34,11 @@ class ListenerProvider implements ListenerProviderInterface
 
     /**
      * Attach an event handler for the given event name
-     * @param  string   $eventName the class name of the event.
-     * @param  callable $callable  callable MUST be type-compatible with $even.
-     * @param  int      $priority  priority, bigger number means higher priority to execute. By
+     * @param string $eventName the class name of the event.
+     * @param callable $callable callable MUST be type-compatible with $even.
+     * @param int $priority priority, bigger number means higher priority to execute. By
      *                             the way, priority only work in the same dispatcher.
-     * @return $this
+     * @return ListenerProvider
      */
     public function attach(string $eventName, callable $callable, int $priority = 50) : self
     {

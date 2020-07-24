@@ -36,7 +36,7 @@
 ###### 定义一个监听器
 ```php
 use App\Events\UserLogin;
-use JigsawPuzzles\EventDispatcher\EventSubscriber;
+use ChangZee\EventDispatcher\EventSubscriber;
 
 class UserLoginListener extends EventSubscriber
 {
